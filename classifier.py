@@ -21,7 +21,7 @@ def get_top_keywords(text, vectorizer, model, top_n=5):
 st.set_page_config(page_title="Zero Spam", page_icon="📧")
 st.title("📧 Zero Spam: Spam Email Classifier")
 
-user_input = st.text_area("Enter your email text below:", height=200)
+user_input = st.text_area("Enter your email text below to classify:", height=200)
 
 if st.button("Classify"):
     if user_input.strip():
