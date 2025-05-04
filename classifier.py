@@ -18,8 +18,8 @@ def get_top_keywords(text, vectorizer, model, top_n=5):
 
 
 # Streamlit UI
-st.set_page_config(page_title="Spam Classifier", page_icon="📧")
-st.title("📧 Spam Email Classifier")
+st.set_page_config(page_title="Zero Spam", page_icon="📧")
+st.title("📧 Zero Spam: Spam Email Classifier")
 
 user_input = st.text_area("Enter your email text below:", height=200)
 

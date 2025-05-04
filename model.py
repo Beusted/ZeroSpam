@@ -9,7 +9,7 @@ nltk.download('stopwords')
 
 
 def load_model():
-    df = pd.read_csv('../spam.csv', encoding='latin-1')[['v1', 'v2']]
+    df = pd.read_csv('./spam.csv', encoding='latin-1')[['v1', 'v2']]
     df.columns = ['label', 'text']
     df['label'] = df['label'].map({'ham': 0, 'spam': 1})
     df['text'] = df['text'].apply(preprocess)
